@@ -20,21 +20,27 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 1.2. Explore os fluxos presentes na aplicaçao Subscriptions e identifique regras e requisitos.
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
    - Caso encontre algo que considere bug, reporte em um arquivo Bugs.md.
-1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 2. Os cenários devem ser versionados no projeto .Net criado no item 1, seguindo os padrões do Specflow.
-1.4. Utilizando os cenáros descritos no item 3 implementa a automação dos mesmos, utilizando os recursos do Specflow.
+     
+1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Specflow.
+
+1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Specflow.
+
 1.5. Gere o relatório html da documentação e resultados da execução de testes com o LivingDoc e versione junto ao projeto.
-1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados  em banco de Dados  PostgrSQL, descreva a estratégia que você utilizaria emrelação a massa de dados de testes
+
+1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados  em banco de Dados PostgrSQL, descreva a estratégia que você utilizaria em relação a massa de dados de testes
 
    ## _Atividade 2_  
 2.1. Criar um projeto de teste de carga usando k6 para avaliar as APIs disponíveis em https://test.k6.io/.
+
   2.2. Crie três testes, simulando cargas de 100, 500 e 1000 usuários simultâneos.
     Teste, no mínimo, os seguintes endpoints:
       - /flip_coin.php
       - /my_messages.php
 
-  2.2.1. Gere os resultados em htmmml
+  2.2.1. Gere os resultados em html
+  
   2.2.2. Envie os scripts de teste e um relatório com os resultados, incluindo gráficos e análise de desempenho.
-Utilize o mesmo repositórío repositório Git do pro jeto criado no item 1 para a entrega.
+Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 
 # Critérios de avaliação
 - Cenários identificados
@@ -60,4 +66,4 @@ Utilize o mesmo repositórío repositório Git do pro jeto criado no item 1 para
     - O que você melhoraria se tivesse mais tempo
     - Quais requisitos obrigatórios que não foram entregues
 4. Informe ao recrutador quando concluir o desafio junto com o link do repositório
-5. Após revisão do projeto junto com a equipe de desevolvimento deixe seu repositório privado
+5. Após revisão do projeto junto com a equipe de técnica deixe seu repositório privado
