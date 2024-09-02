@@ -34,7 +34,9 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 
   2.2. Crie três testes, simulando cargas de 100, 500 e 1000 usuários simultâneos.
     Teste, no mínimo, os seguintes endpoints:
+    
       - /flip_coin.php
+      
       - /my_messages.php
 
   2.2.1. Gere os resultados em html
