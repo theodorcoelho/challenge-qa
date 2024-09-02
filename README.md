@@ -8,26 +8,27 @@
 O objetivo deste desafio é avaliar as competências técnicas dos candidatos a Analista de Testes na Maior Plataforma de Educação do Brasil.
 
 ## _Atividade 1_
-1.1.  Nesta primeira atividade será solicitado a criaçao de uma Projeto .Net para a documentação dos Cenários de testes e a automação e2e. 
+1.1.  Nesta primeira atividade deve ser criado um Projeto .Net para a documentação dos Cenários de testes e para a automação e2e. 
 
 **Especificações Técnicas**
 - Projeto em .Net8.0
   - Specflow
   - Specflow Livingdoc
   - Selenium
+  - - XUnit
   - Fluent Assert
 
-1.2. Explore os fluxos presentes na aplicaçao Subscriptions e identifique regras e requisitos.
+1.2. Explore os fluxos presentes na aplicação Subscriptions e identifique regras e requisitos.
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
-   - Caso encontre algo que considere bug, reporte em um arquivo Bugs.md.
+   - Caso encontre algo que considere bug, reporte em um arquivo chamado `BUGS.md`.
      
 1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Specflow.
 
-1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Specflow.
+1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Specflow e Selenium.
 
 1.5. Gere o relatório html da documentação e resultados da execução de testes com o LivingDoc e versione junto ao projeto.
 
-1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados  em banco de Dados PostgrSQL, descreva a estratégia que você utilizaria em relação a massa de dados de testes
+1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados em banco de Dados PostgrSQL, descreva em um arquivo chamado `DATA.md` a estratégia que você utilizaria em relação a massa de dados de testes
 
    ## _Atividade 2_  
 2.1. Criar ao menos 3 cenários de teste de performance simulando cargas de 100, 500 e 1000 usuários simultâneos.
@@ -67,12 +68,15 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 - Realização do item 2.1 da atividade 2
 
   ## Diferencial
-  - Entrega de todas as atividades propostas para a atividade 2
+  - Componentizar os elementos das páginas com Selenium e utilizar estes componentes na automação
+  - Execução dos testes em paralelo utilizando 3 diferentes navegadores
+  - Utilizar Selenium grid com docker compose
+  - Entregar além do item 1todas as atividades propostas para a atividade 2
 
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub
 2. Faça o push do código desenvolvido no seu Github
-3. Inclua um arquivo chamado COMMENTS.md explicando:
+3. Inclua um arquivo chamado `COMMENTS.md` explicando:
     - Decisões da arquitetura utilizada
     - Lista de bibliotecas de terceiros utilizadas
     - O que você melhoraria se tivesse mais tempo
