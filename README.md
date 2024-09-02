@@ -72,12 +72,12 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 - Entregar além da atividade e 2.1 da atividade 2todas as atividades propostas para a atividade 2
 
 # Instruções de entrega
-1. Crie um fork do repositório no seu GitHub
+1. Crie um fork do repositório no seu GitHub, deixando a visibilidade do projeto como pública
 2. Faça o push do código desenvolvido no seu Github
 3. Inclua um arquivo chamado `COMMENTS.md` explicando:
     - Decisões da arquitetura utilizada
     - Lista de bibliotecas de terceiros utilizadas
     - O que você melhoraria se tivesse mais tempo
     - Quais requisitos obrigatórios que não foram entregues
-4. Informe ao recrutador quando concluir o desafio junto com o link do repositório
+4. Você tem 10 dias para entregar o desafio. Informe ao recrutador quando concluí-lo, enviando junto o junto com o link do repositório
 5. Após revisão do projeto junto com a equipe de técnica deixe seu repositório privado
