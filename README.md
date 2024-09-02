@@ -15,13 +15,13 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
   - Specflow
   - Specflow Livingdoc
   - Selenium
-  - - XUnit
+  - XUnit
   - Fluent Assert
 
 1.2. Explore os fluxos presentes na aplicação Subscriptions e identifique regras e requisitos.
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
    - Caso encontre algo que considere bug, reporte em um arquivo chamado `BUGS.md`.
-     
+
 1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Specflow.
 
 1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Specflow e Selenium.
@@ -30,23 +30,22 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 
 1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados em banco de Dados PostgrSQL, descreva em um arquivo chamado `DATA.md` a estratégia que você utilizaria em relação a massa de dados de testes
 
-   ## _Atividade 2_  
+   ## _Atividade 2_
 2.1. Criar ao menos 3 cenários de teste de performance simulando cargas de 100, 500 e 1000 usuários simultâneos.
     Teste, no mínimo, os seguintes endpoints:
-    
-      - /flip_coin.php      
+
+      - /flip_coin.php
       - /my_messages.php
-      
+
 2.2. Criar um projeto de teste de carga usando k6 para avaliar as APIs disponíveis [aqui](https://test.k6.io/).
 
   2.2.1. Crie scripts de teste com k6 para os cenários criados no item 2.1, sendo, no mínimo os testes para os seguintes endpoints:
-    
+
       - /flip_coin.php
-      
       - /my_messages.php
 
   2.2.2. Gere os resultados em html
-  
+
   2.2.3. Envie os scripts de teste e um relatório com os resultados, incluindo gráficos e análise de desempenho.
 Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 
