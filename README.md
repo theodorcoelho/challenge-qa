@@ -66,11 +66,11 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 - Realização da atividade 1 completa
 - Realização do item 2.1 da atividade 2
 
-  ## Diferencial
-  - Componentizar os elementos das páginas com Selenium e utilizar estes componentes na automação
-  - Execução dos testes em paralelo utilizando 3 diferentes navegadores
-  - Utilizar Selenium grid com docker compose
-  - Entregar além do item 1todas as atividades propostas para a atividade 2
+## Diferencial
+- Componentizar os elementos das páginas com Selenium e utilizar estes componentes na automação
+- Execução dos testes em paralelo utilizando 3 diferentes navegadores
+- Utilizar Selenium grid com docker compose
+- Entregar além do item 1todas as atividades propostas para a atividade 2
 
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub
