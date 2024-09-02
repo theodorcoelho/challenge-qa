@@ -50,9 +50,6 @@ Utilize o mesmo repositórío repositório Git do pro jeto criado no item 1 para
 - Aplicação de boas práticas de escrita de cenários
 - Uso de todos os elementos do Gherkin
 - Uso de recursos do Specflow
-  
-## Diferenciais
-- Implementar a atividade 2
 
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub
