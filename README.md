@@ -30,18 +30,23 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 1.6. Considerando que a aplicação aqui utilizada vai passar a persistir dados  em banco de Dados PostgrSQL, descreva a estratégia que você utilizaria em relação a massa de dados de testes
 
    ## _Atividade 2_  
-2.1. Criar um projeto de teste de carga usando k6 para avaliar as APIs disponíveis em https://test.k6.io/.
-
-  2.2. Crie três testes, simulando cargas de 100, 500 e 1000 usuários simultâneos.
+2.1. Criar ao menos 3 cenários de teste de performance simulando cargas de 100, 500 e 1000 usuários simultâneos.
     Teste, no mínimo, os seguintes endpoints:
+    
+      - /flip_coin.php      
+      - /my_messages.php
+      
+2.2. Criar um projeto de teste de carga usando k6 para avaliar as APIs disponíveis [aqui](https://test.k6.io/).
+
+  2.2.1. Crie scripts de teste com k6 para os cenários criados no item 2.1, sendo, no mínimo os testes para os seguintes endpoints:
     
       - /flip_coin.php
       
       - /my_messages.php
 
-  2.2.1. Gere os resultados em html
+  2.2.2. Gere os resultados em html
   
-  2.2.2. Envie os scripts de teste e um relatório com os resultados, incluindo gráficos e análise de desempenho.
+  2.2.3. Envie os scripts de teste e um relatório com os resultados, incluindo gráficos e análise de desempenho.
 Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 
 # Critérios de avaliação
@@ -58,6 +63,11 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 - Aplicação de boas práticas de escrita de cenários
 - Uso de todos os elementos do Gherkin
 - Uso de recursos do Specflow
+- Realização da atividade 1 completa
+- Realização do item 2.1 da atividade 2
+
+  ## Diferencial
+  - Entrega de todas as atividades propostas para a atividade 2
 
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub
