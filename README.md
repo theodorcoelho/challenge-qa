@@ -57,7 +57,7 @@ Utilize o mesmo repositórío repositório Git do pro jeto criado no item 1 para
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub
 2. Faça o push do código desenvolvido no seu Github
-3. Inclua um arquivo chamado COMMENTS.md explicando
+3. Inclua um arquivo chamado COMMENTS.md explicando:
     - Decisões da arquitetura utilizada
     - Lista de bibliotecas de terceiros utilizadas
     - O que você melhoraria se tivesse mais tempo
