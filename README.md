@@ -44,7 +44,7 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
       - /flip_coin.php
       - /my_messages.php
 
-  2.2.2. Descreva em um arquivo chamado `k6-data` a estratégia que você utilizaria em relação a massa de dados de testes com o K6
+  2.2.2. Descreva em um arquivo chamado `k6-data.md` a estratégia que você utilizaria em relação a massa de dados de testes com o K6
   
   2.2.3. Gere os resultados em html
 
