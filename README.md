@@ -71,7 +71,7 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
 
 ## Diferencial
 - Utilizar Selenium grid com docker compose
-- Entregar além da atividade e 2.1 da atividade 2 todas as atividades propostas para a atividade 2
+- Entregar além da atividade 1 completa e 2.1 da atividade 2 todas as atividades propostas para a atividade 2
 
 # Instruções de entrega
 1. Crie um fork do repositório no seu GitHub, deixando a visibilidade do projeto como pública
