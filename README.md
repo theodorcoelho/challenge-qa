@@ -81,5 +81,5 @@ Utilize o mesmo repositório Git do projeto criado no item 1 para a entrega.
     - Lista de bibliotecas de terceiros utilizadas
     - O que você melhoraria se tivesse mais tempo
     - Quais requisitos obrigatórios que não foram entregues
-4. Você tem 7 dias para entregar o desafio. Informe ao recrutador quando concluí-lo, enviando junto o junto com o link do repositório
+4. Você tem 7 dias para entregar o desafio. Informe ao recrutador quando concluí-lo, enviando junto o link do repositório
 5. Após revisão do projeto junto com a equipe de técnica deixe seu repositório privado
