@@ -12,7 +12,7 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 
 **Especificações Técnicas**
 - Projeto em .Net8.0
-  - Reqnroll
+  - Reqnroll (ou Specflow)
   - Selenium
   - XUnit
   - Fluent Assert
@@ -21,9 +21,9 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
    - Caso encontre algo que considere bug, reporte em um arquivo chamado `BUGS.md`.
 
-1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Reqnroll.
+1.3. Utilizando todos os elementos do Gherkin descreva em cenários as regras e requisitos identificados no item 1.2. Os cenários devem ser versionados no projeto .Net criado no item 1.1, seguindo os padrões do Reqnroll( ou Specflow).
 
-1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Reqnroll e Selenium.
+1.4. Utilizando os cenáros descritos no item 1.3 implemente a automação dos mesmos, utilizando os recursos do Reqnroll (ou Specflow) e Selenium.
 
 1.5. Considerando que a aplicação aqui utilizada vai passar a persistir dados em banco de Dados PostgrSQL, descreva em um arquivo chamado `DATA.md` a estratégia que você utilizaria em relação a massa de dados de testes
 
