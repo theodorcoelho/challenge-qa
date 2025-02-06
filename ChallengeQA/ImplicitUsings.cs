@@ -3,3 +3,8 @@ global using OpenQA.Selenium;
 global using Reqnroll;
 global using ChallengeQA.Support;
 global using Xunit;
+global using ChallengeQA.Pages;
+global using ChallengeQA.StepDefinitions;
+global using ChallengeQA.Models;
+global using ChallengeQA.Features;
+global using BoDi;
