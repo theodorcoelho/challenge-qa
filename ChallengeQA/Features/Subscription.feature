@@ -21,30 +21,13 @@ Cenario: Exibe alerta ao selecionar nível de ensino inválido
 	Quando seleciona o nível de ensino "Selecione uma opção..."
 	Entao deve ser apresentado um alert com a mensagem "Por favor, selecione um nível de ensino..."
 
-Cenário: Pesquisa curso de graduação nos cursos de graduação
-	Dado que o candidato está na página de seleção de curso de graduação
+Cenario: Pesquisa curso de graduação ou pós-graduação
+	Dado que o candidato está na página de seleção de curso de <nível>
 	Quando clicar em "Selecione um curso..."
-	E pesquisar o curso "Direito"
-	Então deve encontrar o curso "Direito"
+	E pesquisar o curso "<curso>"
+	Entao deve encontrar o curso "<curso>"
 
-Cenário: Pesquisa curso de pós-graduação no curso de pós-graduação
-	Dado que o candidato está na página de seleção de curso de pos-graduação
-	Quando clicar em "Selecione um curso..."
-	E pesquisar o curso "Mestrado em Inteligência Artificial"
-	Então não deve encontrar o curso "Mestrado em Inteligência Artificial"
-
-Cenário: Pesquisa de curso de pós-graduação no curso de pós graduação
-	Dado que o candidato está na página de seleção de curso de pos-graduação
-	Quando clicar em "Selecione um curso..."
-	E pesquisar o curso "Mestrado em Inteligência Artificial"
-	Então deve encontrar o curso "Mestrado em Inteligência Artificial"
-
-Cenário: Pesquisa curso de graduação nos cursos de pós-graduação
-	Dado que o candidato está na página de seleção de curso de graduação
-	Quando clicar em "Selecione um curso..."
-	E pesquisar o curso "Análise e Desenvolvimento de Sistemas"
-	Então não deve encontrar o curso "Análise e Desenvolvimento de Sistemas"
-
-
-
-
+Exemplos:
+	| nível         | curso                               |
+	| graduação     | Direito                             |
+	| pós-graduação | Mestrado em Inteligência Artificial |
