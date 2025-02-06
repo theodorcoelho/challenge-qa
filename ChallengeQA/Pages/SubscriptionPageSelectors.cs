@@ -13,11 +13,13 @@ namespace ChallengeQA.Pages
         public const string MenuHome = "[data-testid='nav-0-link']";
         public const string MenuPrivacidade = "[data-testid='nav-1-link']";
 
-
         // Campos de seleção de nível de ensino e curso
         public const string ComboboxNivelEnsino = "[data-testid='education-level-select']";
         public const string ComboboxCurso = "[data-testid='graduation-combo']";
-         
+        public const string NivelDeEnsinoGraduacao = "//*[@id=\"radix-vue-select-content-4\"]/div/div/div[3]";
+        public const string NivelDeEnsinoPosGraduacao = "//*[@id=\"radix-vue-select-content-4\"]/div/div/div[4]";
+        
+
         // Botões de navegação avançar e voltar no cadastro
         public const string ButtonVoltar  = "[data-testid='back-button']";
         public const string ButtonAvancar = "[data-testid='next-button']";

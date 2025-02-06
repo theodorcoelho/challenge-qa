@@ -8,17 +8,17 @@ Contexto:
 	Dado que o candidato acessa o portal de inscricoes
 
 Cenario: Redirecionar para seleção de curso ao escolher 'Graduacao'
-	Dado que o candidato está na página inicial
-#	Quando seleciona o nível de ensino "graduacao"
-#	Entao deve ser redirecionado para seleção de curso de "graduacao"
+	Dado que o candidato esta na pagina inicial
+	Quando seleciona o nivel de ensino "graduacao"
+	Entao deve ser redirecionado para selecao de curso de "graduacao"
 
-#Cenario: Redirecionar para seleção de curso ao escolher 'Pós-graduação'
-#	Dado que o candidato está na página inicial
-#	Quando seleciona o nível de ensino "pos-graduacao"
-#	Entao deve ser redirecionado para seleção de curso de pós-graduação
+Cenario: Redirecionar para seleção de curso ao escolher 'Pós-graduação'
+	Dado que o candidato esta na pagina inicial
+	Quando seleciona o nivel de ensino "pos-graduacao"
+	Entao deve ser redirecionado para selecao de curso de "pos-graduacao"
 #
 #Cenario: Exibir alerta ao selecionar nível de ensino inválido
-#	Dado que o candidato está na página inicial
+#	Dado que o candidato esta na pagina inicial
 #	Quando seleciona o nível de ensino "Selecione uma opção..."
 #	Entao deve ser apresentado um alert com a mensagem "Por favor, selecione um nível de ensino..."
 #
