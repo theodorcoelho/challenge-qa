@@ -32,3 +32,55 @@ Exemplos:
 	| nível         | curso                               |
 	| graduação     | Direito                             |
 	| pós-graduação | Mestrado em Inteligência Artificial |
+
+Cenario: Cadastro bem-sucedido com preenchimento dos campos obrigatórios
+	Dado que o candidato está na página de cadastro
+	Quando preenche todos os campos obrigatórios com dados válidos
+	E clica no botão "Avançar"
+	Entao o candidato deve ser redirecionado para a tela de confirmação
+	E as credenciais de acesso à área do candidato devem ser disponibilizadas
+
+Cenario: Exibir erro ao deixar campo obrigatório vazio
+	Dado que o candidato está na página de cadastro
+	Quando preenche todos os campos obrigatórios com dados válidos
+	E o campo "<campo>" está vazio
+	E o candidato clica no botão "Avançar"
+	Entao o formulário não deve ser submetido
+	E o campo "<campo>" deve ser destacado em vermelho
+	E deve exibir a mensagem "Campo obrigatório" abaixo do campo
+
+Exemplos:
+	| campo          |
+	| cpf            |
+	| name           |
+	| surname        |
+	| socialName     |
+	| birthdate      |
+	| email          |
+	| cellphone      |
+	| cep            |
+	| address        |
+	| neighborhood   |
+	| city           |
+	| state          |
+	| country        |
+
+Cenario: Exibir erro ao inserir CPF inválido
+	Dado que o candidato está na página de cadastro
+	Quando insere um CPF inválido
+	Entao deve exibir uma mensagem de erro informando que o CPF é inválido
+
+Cenario: Exibir erro ao inserir data de nascimento inválida
+	Dado que o candidato está na página de cadastro
+	Quando insere uma data de nascimento inválida
+	Entao deve exibir uma mensagem de erro informando que a data é inválida
+
+Cenario: Exibir erro ao inserir e-mail inválido
+	Dado que o candidato está na página de cadastro
+	Quando insere um e-mail em formato inválido
+	Entao deve exibir uma mensagem de erro informando que o e-mail é inválido
+
+Cenario: Exibir erro ao inserir celular inválido
+	Dado que o candidato está na página de cadastro
+	Quando insere um número de celular em formato inválido
+	Entao deve exibir uma mensagem de erro informando que o número é inválido
