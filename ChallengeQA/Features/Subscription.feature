@@ -15,18 +15,30 @@ Cenario: Redirecionar para seleção de curso ao escolher 'Graduação'
 Cenario: Redirecionar para seleção de curso ao escolher 'Pós-graduação'
 	Dado que o candidato está na página inicial
 	Quando seleciona o nível de ensino "pos-graduacao"
-	Entao deve ser redirecionado para seleção de curso de graduação
+	Entao deve ser redirecionado para seleção de curso de pós-graduação
 
 Cenario: Exibir alerta ao selecionar nível de ensino inválido
 	Dado que o candidato está na página inicial
 	Quando seleciona o nível de ensino "Selecione uma opção..."
 	Entao deve ser apresentado um alert com a mensagem "Por favor, selecione um nível de ensino..."
 
-Cenario: Pesquisar curso
+Cenario: Pesquisar e selecionar curso
 	Dado que o candidato está na página de seleção de curso de <nível>
 	Quando clicar em "Selecione um curso..."
 	E pesquisar o curso "<curso>"
 	Entao deve encontrar o curso "<curso>"
+
+Cenario: Redirecionar para o formulário de cadastro após selecionar um curso
+	Dado que o candidato está na página de seleção de curso de <nível>
+	Quando seleciona o curso "<curso>"
+	E clica no botão "Avançar"
+	Entao o candidato deve ser redirecionado para o formulário de cadastro
+
+Cenario: Exibir erro ao não selecionar o curso
+	Dado que o candidato está na página de seleção de curso de <nível>
+	Quando não seleciona um curso
+	E tenta avançar para o próximo passo
+	Entao deve ser exibida a mensagem "Por favor, selecione um curso"
 
 Exemplos:
 	| nível         | curso                               |
