@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using ChallengeQA.Models;
 using OpenQA.Selenium.Support.UI;
@@ -66,5 +67,33 @@ namespace ChallengeQA.Pages
         public void ClicaEmAvancar() => ClicaElemento(SubscriptionPageSelectors.ButtonAvancar, TipoSeletor.CssSelector);
         public void ClicaEmVoltar() => ClicaElemento(SubscriptionPageSelectors.ButtonVoltar, TipoSeletor.CssSelector);
 
+        public void ClicarNaComboboxDeNivelDeEnsino(string nivelEnsino)
+        {
+            ClicaElemento(SubscriptionPageSelectors.ComboboxNivelEnsino, TipoSeletor.CssSelector);
+            if (nivelEnsino == "graduacao")
+            {
+                ClicaElemento(SubscriptionPageSelectors.NivelDeEnsinoGraduacao, TipoSeletor.XPath);
+                return;
+            }
+            if (nivelEnsino == "pos-graduacao")
+            {
+                ClicaElemento(SubscriptionPageSelectors.NivelDeEnsinoPosGraduacao, TipoSeletor.XPath);
+                return;
+            }
+            return;
+        }
+
+        public void AcessarPortalDeInscicoes()
+        {
+            _driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription");
+            var elemento = GetElement(SubscriptionPageSelectors.ComboboxNivelEnsino);
+            _wait.Until(d => elemento.Displayed && elemento.Enabled);
+        }
+        public void VerificarSeEstaNaPaginaInicial()
+        {
+            var elemento = GetElement(SubscriptionPageSelectors.ComboboxNivelEnsino);
+            _driver.FindElement(By.CssSelector(SubscriptionPageSelectors.ComboboxNivelEnsino)).Displayed
+                .Should().BeTrue();
+        }
     }
 }

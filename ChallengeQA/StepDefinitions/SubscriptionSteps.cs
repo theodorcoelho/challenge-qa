@@ -9,6 +9,7 @@ using ChallengeQA.Support;
 using Reqnroll;
 using FluentAssertions;
 using OpenQA.Selenium;
+using System.Threading;
 
 
 namespace ChallengeQA.StepDefinitions
@@ -31,26 +32,26 @@ namespace ChallengeQA.StepDefinitions
         [Given("que o candidato acessa o portal de inscricoes")]
         public void GivenQueOCandidatoAcessaOPortalDeInscricoes()
         {
-            _driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription");
+            SubscriptionPage.AcessarPortalDeInscicoes();
         }
 
-        [Given("que o candidato está na página inicial")]
+        [Given("que o candidato esta na pagina inicial")]
         public void GivenQueOCandidatoEstaNaPaginaInicial()
         {
-            _driver.Navigate().GoToUrl("https://developer.grupoa.education/subscription");
-            
+            SubscriptionPage.VerificarSeEstaNaPaginaInicial();
         }
 
-        [When("seleciona o nível de ensino {string}")]
-        public void WhenSelecionaONivelDeEnsino(string graduacao)
+        [When("seleciona o nivel de ensino {string}")]
+        public void WhenSelecionaONivelDeEnsino(string nivelEnsino)
         {
-            throw new PendingStepException();
+            SubscriptionPage.ClicarNaComboboxDeNivelDeEnsino(nivelEnsino);
         }
 
-        [Then("deve ser redirecionado para seleção de curso de {string}")]
+        [Then("deve ser redirecionado para selecao de curso de {string}")]
         public void ThenDeveSerRedirecionadoParaSelecaoDeCursoDe(string graduacao)
         {
-            throw new PendingStepException();
+            _driver.FindElement(By.CssSelector(SubscriptionPageSelectors.ComboboxCurso)).Displayed
+                .Should().BeTrue();
         }
     }
 }
