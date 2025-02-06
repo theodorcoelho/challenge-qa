@@ -21,6 +21,12 @@ namespace ChallengeQA.Pages
 
         private IWebElement GetElement(String seletor) => _driver.FindElement(By.CssSelector(seletor));
 
+        public enum TipoSeletor
+        {
+            CssSelector,
+            XPath
+        }
+
         private void PreencheCampo(string seletor, string valor)
         {
             var elemento = GetElement(seletor);
@@ -29,13 +35,15 @@ namespace ChallengeQA.Pages
             elemento.SendKeys(valor);
         }
 
-        private void ClicaElemento(string seletor)
+        private void ClicaElemento(string seletor, TipoSeletor tipo)
         {
-            var elemento = GetElement(seletor);
+            var elemento = tipo == TipoSeletor.XPath
+                ? _driver.FindElement(By.XPath(seletor))
+                : GetElement(seletor);
+
             _wait.Until(d => elemento.Displayed && elemento.Enabled);
             elemento.Click();
         }
-
         public void preencheCamposObrigatoriosComDadosValidos()
         {
             Candidato candidato = new Candidato();
@@ -55,8 +63,8 @@ namespace ChallengeQA.Pages
             PreencheCampo(SubscriptionPageSelectors.InputPais, endereco.Pais);
         }
        
-        public void ClicaEmAvancar() => ClicaElemento(SubscriptionPageSelectors.ButtonAvancar);
-        public void ClicaEmVoltar() => ClicaElemento(SubscriptionPageSelectors.ButtonVoltar);
+        public void ClicaEmAvancar() => ClicaElemento(SubscriptionPageSelectors.ButtonAvancar, TipoSeletor.CssSelector);
+        public void ClicaEmVoltar() => ClicaElemento(SubscriptionPageSelectors.ButtonVoltar, TipoSeletor.CssSelector);
 
     }
 }
