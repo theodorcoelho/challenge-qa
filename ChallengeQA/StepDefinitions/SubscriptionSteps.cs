@@ -11,7 +11,6 @@ using FluentAssertions;
 using OpenQA.Selenium;
 using System.Threading;
 
-
 namespace ChallengeQA.StepDefinitions
 {
     [Binding]
