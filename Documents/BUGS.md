@@ -19,5 +19,3 @@ Por ser uma aplicação que não realiza requisições pro backend para realizar
 
 ## Minhas inscrições e Financeiro não implementados
 Validado o acesso às páginas, mas as mesmas ainda não foram implementadas
-
-## Tecla Enter para realização do login
