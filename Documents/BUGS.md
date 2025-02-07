@@ -2,7 +2,7 @@
 ## Combobox de nível de ensino traz o último item clicado sempre pre selecionado
 ## Pós-graduações estão sendo listadas junto com os cursos de graduações
 ## Usuário é alertado mas não é impedido de inserir mais caracteres que o permitido
-## Data de nascimento aceita data futura e inválida (texto)
+## Data de nascimento aceita data futura
 ## Cor de alerta não tem bom contraste com o fundo no modo escuro
  ![Resultado do teste de Contrate de Cor](contrasteCorExemplo.png)
  ![Constraste do formulário no tema escuro](contrasteFormularioEscuro.png)
