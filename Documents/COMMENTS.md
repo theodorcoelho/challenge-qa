@@ -15,6 +15,7 @@
 - **Componentização com Selenium:** Desenvolver componentes reutilizáveis para elementos da interface, aumentando a manutenção e clareza dos testes.
 - **Execução Paralela em Múltiplos Navegadores:** Configurar testes para rodar simultaneamente em diferentes navegadores, garantindo compatibilidade cross-browser.
 - **Integração do Selenium Grid com Docker Compose:** Implementar o Selenium Grid utilizando Docker Compose para facilitar a escalabilidade e gerenciamento dos ambientes de teste.
+- **Finalização da automatização dos steps conforme cenários no arquivo Subscription.feature 
 
 ## Requisitos Obrigatórios Não Entregues
 - **Atividade 2:** Os cenários de teste de performance simulando cargas de 100, 500 e 1000 usuários simultâneos, bem como a criação do projeto de teste de carga usando k6, não foram
